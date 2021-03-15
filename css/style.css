@@ -147,6 +147,8 @@ ul {
   letter-spacing: 0.02em;
   padding-top: 20px;
   padding-bottom: 28px;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 
 .social-links .item {
@@ -166,6 +168,7 @@ ul {
 .social-links .current {
   position: relative;
   color: var(--blue-text);
+  transition: fill var(--time) var(--cubic);
 }
 
 .social-links .current::after {
@@ -178,12 +181,16 @@ ul {
   height: 4px;
   background-color: var(--blue-text);
   border-radius: 2px;
+  transition: fill var(--time) var(--cubic);
 }
 
 .adress-header {
   display: flex;
   margin: 0;
   padding: 0;
+  transition-property: color;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 
 .adress-header .link {
@@ -214,6 +221,8 @@ ul {
 .icon {
   margin-right: 10px;
   fill: currentColor;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 
 .mail.icon:hover,
@@ -330,6 +339,7 @@ ul {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  background-color: var(--white-text);
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
@@ -545,11 +555,15 @@ ul {
   height: 44px;
   align-items: center;
   justify-content: center;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 
 .icon-svg {
   fill: var(--clients);
   padding-right: 0;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 
 .social-link .social-list:hover .icon-svg,
@@ -609,7 +623,8 @@ ul {
   border: 1px solid var(--clients);
   margin-left: 0;
   margin-right: 30px;
-
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
   cursor: pointer;
 }
 
@@ -632,6 +647,8 @@ ul {
   fill: var(--clients);
   width: 100%;
   height: 100%;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 
 /* footer */
@@ -729,6 +746,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: var(--white-text);
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 
 .icon-list {
@@ -740,10 +760,6 @@ ul {
   height: 44px;
   align-items: center;
   justify-content: center;
-}
-
-.icons-svg {
-  fill: var(--white-text);
 }
 
 /* hero-portfolio */
@@ -772,6 +788,8 @@ ul {
   border-color: transparent;
   padding-left: 22px;
   padding-right: 22px;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 
 .nav-portfolio .btn:not(:last-child) {
@@ -784,6 +802,8 @@ ul {
   background: var(--blue-text);
   outline: none;
   cursor: pointer;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -833,6 +853,10 @@ ul {
   margin-left: auto;
 }
 
+.over-text {
+  position: relative;
+}
+
 .pro-cat {
   padding-bottom: 20px;
   padding-top: 20px;
@@ -863,6 +887,8 @@ ul {
 .card:focus .portfolio-overlay {
   transform: translateY(0);
   opacity: 1;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 
 .portfolio-overlay {
