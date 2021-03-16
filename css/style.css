@@ -206,6 +206,9 @@ ul {
   padding-bottom: 20px;
   display: flex;
   align-items: center;
+  transition-property: color;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 
 .adress-header .link:hover,
@@ -221,6 +224,7 @@ ul {
 .icon {
   margin-right: 10px;
   fill: currentColor;
+  transition-property: fill;
   transition-duration: var(--time);
   transition-timing-function: var(--cubic);
 }
@@ -555,6 +559,7 @@ ul {
   height: 44px;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
   transition-duration: var(--time);
   transition-timing-function: var(--cubic);
 }
@@ -562,6 +567,7 @@ ul {
 .icon-svg {
   fill: var(--clients);
   padding-right: 0;
+  transition-property: fill;
   transition-duration: var(--time);
   transition-timing-function: var(--cubic);
 }
@@ -623,6 +629,7 @@ ul {
   border: 1px solid var(--clients);
   margin-left: 0;
   margin-right: 30px;
+  transition-property: border;
   transition-duration: var(--time);
   transition-timing-function: var(--cubic);
   cursor: pointer;
@@ -641,12 +648,16 @@ ul {
 .clients-list .clients-logo:focus .clients-svg {
   fill: var(--blue-text);
   border: 1px solid var(--blue-text);
+  border-radius: 4px;
 }
 
 .clients-svg {
+
   fill: var(--clients);
   width: 100%;
   height: 100%;
+  
+  transition-property: fill;
   transition-duration: var(--time);
   transition-timing-function: var(--cubic);
 }
@@ -747,6 +758,7 @@ ul {
   align-items: center;
   justify-content: center;
   fill: var(--white-text);
+  transition-property: fill;
   transition-duration: var(--time);
   transition-timing-function: var(--cubic);
 }
@@ -760,6 +772,9 @@ ul {
   height: 44px;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: var(--time);
+  transition-timing-function: var(--cubic);
 }
 
 /* hero-portfolio */
@@ -788,6 +803,7 @@ ul {
   border-color: transparent;
   padding-left: 22px;
   padding-right: 22px;
+  transition-property: color, background-color, box-shadow;
   transition-duration: var(--time);
   transition-timing-function: var(--cubic);
 }
@@ -802,6 +818,7 @@ ul {
   background: var(--blue-text);
   outline: none;
   cursor: pointer;
+  transition-property: color, background-color, box-shadow;
   transition-duration: var(--time);
   transition-timing-function: var(--cubic);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -855,6 +872,12 @@ ul {
 
 .over-text {
   position: relative;
+  width: 368px;
+  height: 294px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--hover-overlay);
+  overflow: hidden;
 }
 
 .pro-cat {
